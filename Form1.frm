@@ -88,6 +88,7 @@ Private Sub Command1_Click()
 230 If A = -1 Then GoTo 990
 990 If A < -1 Then MsgBox "negative numbers not handled ", vbExclamation: GoTo 220
 1000 Text1.Text = "the square root of " & A & " is " & SQR(A)
+Ex1
 End Sub
 
 Private Sub Command2_Click()
@@ -104,10 +105,13 @@ Private Sub Command2_Click()
     Picture1.Picture.Height / s
     Picture1.Picture = Picture1.Image
     Picture1.Refresh
-
 End Sub
 
 Private Sub Quit_Click()
     Unload Form1
     End ' Ends application.
 End Sub
+
+Sub ex1
+    Print "HelloSub!"
+End sub
